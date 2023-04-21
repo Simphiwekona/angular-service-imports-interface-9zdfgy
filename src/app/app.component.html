@@ -1,0 +1,17 @@
+<div class="container">
+  this is where will will eventually loop through our car types.
+
+  <button (click)="saySomething()">Say Something</button>
+
+  <div class="number-display">
+    {{ counter }}
+  </div>
+  <button (click)="increment()">Increment</button>
+  <button (click)="decrement()">Decrement</button>
+
+  <div class="display">
+    {{ phrase }}
+  </div>
+  <button (click)="update()">Click me</button>
+  <div *ngFor="let car of cars"></div>
+</div>
